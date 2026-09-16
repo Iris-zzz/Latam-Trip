@@ -1,0 +1,10 @@
+name = "iris-zhenzhen-latam-trip"
+main = "worker.js"
+compatibility_date = "2024-09-01"
+
+# 待办清单的多端同步存储。首次通过 Cloudflare 控制台部署时会引导你创建，
+# 之后把生成的 id 填进下面这行（或者在仪表盘的 Settings → Variables 里手动绑定，
+# 变量名必须是 TRIP_KV，跟 worker.js 里读取的名字一致）。
+[[kv_namespaces]]
+binding = "TRIP_KV"
+id = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
